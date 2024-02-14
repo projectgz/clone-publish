@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.container {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main";
+}
+
+.nav-search-div-item-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-home-item-div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:hover > .svg-div {
+  background-color: transparent;
+}
+
+.nav-item:hover svg {
+  background-color: transparent;
+}
+
+.nav-item, .nav-explore-span {
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 14px;
+  padding-right: 14px;
+  align-items: center;
+}
+
+.nav-item:hover {
+  background-color: #272727;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-item:hover span {
+  background-color: inherit;
+}
+
+.nav-item:hover .nav-div-span-div {
+  background-color: inherit;
+}
+
+.nav-item > span {
+  display: flex;
+  align-items: center;
+}
+
+.svg-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-div {
+  padding: 12px;
+}
+
+header {
+  grid-area: header;
+  height: 100%;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.nav-img-div > img {
+  border-radius: 50%;
+}
+
+.svg-div {
+  width: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.svg-div > svg {
+  height: 24px;
+  fill: white;
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  grid-area: main;
+}
+
+.container > * {
+  border: 1px solid red;
+}
+
+.path-red {
+  fill: red !important;
+}
+
+.svg-div-no-fill {
+  height: 24px;
+}
+
+nav > :not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-div-span-div {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+/* 구독 영역 */
+.subscribe-div:not(:last-child) {
+  padding: 12px;
+}
+
+.subscribe-item {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+}
+
+.subscribe-item:hover {
+  background-color: #272727;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.subscribe-item:hover > div {
+  background-color: transparent;
+}
+
+.subscribe-item > div {
+  margin-right: 12px;
+}
+
+.subscribe-channel-name {
+  flex-basis: 144px;
+  margin-right: 0px !important;
+  background-color: inherit;
+}
+
+.subscribe-item > span {
+  background-color: transparent;
+}
+
+/*  */
+.nav-img-div {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  display:flex;
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.span-ellipsis {
+  display: inline-block;
+  width: 132px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+}
+
+.svg-live > svg {
+  background-color: inherit;
+}
+
+.svg-live > svg {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+}
+
+.nav-item > h3 {
+  display: flex;
+  align-items: center;
+}
+
+.footer-div a {
+  text-decoration: none;
+}
+
+.footer-div > div {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 13px;
+}
+
+.footer-div a, .footer-div p {
+  color: rgb(170, 170, 170);
+}
+
+.footer-div-a {
+  padding: 16px 24px;
+}
+
+.footer-div-a > a {
+  color: rgb(62, 166, 255);
+}
+
+.footer-div-a > p {
+  color: rgb(113, 113, 113);
+}
+
+.svg-live {
+  margin-right: 0px !important;
+}
