@@ -45,13 +45,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 397px;
   height: 40px;
 }
 
 .search-div-div {
   display: flex;
-  width: 230px;
+  width: 326px;
 }
 
 .search-input {
@@ -68,8 +68,9 @@
 
 .search-div-div {
   border: 1px solid rgb(48, 48, 48);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
 }
 
 .search-div-div:focus-within {
@@ -80,4 +81,25 @@
 .search-keyboard-icon {
   margin-right: 10px;
   margin-left: 5px;
+}
+
+.search-div-btn {
+  border: 1px solid rgb(48, 48, 48);
+  height: 38px;
+  border-left: none;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #222222;
+}
+
+.search-div-btn > div > svg {
+  background-color: inherit;
+}
+
+.search-div-btn-svg {
+  background-color: inherit;
 }
