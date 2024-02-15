@@ -1,7 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0f0f0f;
+  color: white;
+}
+
 .back-color-trans {
   background-color: transparent;
 }
 
 .back-color-inherit {
   background-color: inherit;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
