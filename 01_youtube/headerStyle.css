@@ -45,20 +45,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 397px;
+  width: 503px;
   height: 40px;
 }
 
 .search-div-div {
   display: flex;
-  width: 326px;
+  width: 484px;
 }
 
 .search-input {
   height: 38px;
   width: 100%;
   border: none;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .search-input:focus {
@@ -96,10 +96,45 @@
   background-color: #222222;
 }
 
+.search-div-btn:hover {
+  cursor: pointer;
+}
+
 .search-div-btn > div > svg {
   background-color: inherit;
 }
 
 .search-div-btn-svg {
   background-color: inherit;
+}
+
+.search-div-mic {
+  width: 40px;
+  height: 40px;
+  background-color: #222222;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.search-div-mic:hover {
+  background-color: #272727;
+}
+
+.search-div-mic-svg {
+  background-color: inherit;
+}
+
+.search-div-mic-svg > svg {
+  background-color: inherit;
+}
+
+.header-end-div {
+  width: 120px;
+}
+
+.account-img {
+  border-radius: 20px;
 }

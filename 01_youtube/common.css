@@ -5,6 +5,10 @@
   color: white;
 }
 
+/* .container > * {
+  border: 1px solid red;
+} */
+
 .back-color-trans {
   background-color: transparent;
 }
@@ -17,4 +21,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.d-flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
 }

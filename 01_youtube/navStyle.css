@@ -1,5 +1,4 @@
 .container {
-  border: 1px solid green;
   display: grid;
   grid-template-columns: 240px 1fr;
   grid-template-areas:
@@ -97,10 +96,6 @@ svg {
 
 main {
   grid-area: main;
-}
-
-.container > * {
-  border: 1px solid red;
 }
 
 .path-red {

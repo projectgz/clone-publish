@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="navStyle.css">
   <link rel="stylesheet" href="headerStyle.css">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
 
         <div class="search-div">
           <div class="search-div-div">
-            <input class="search-input" type="text">
+            <input class="search-input" type="text" placeholder="검색">
             <div class="d-flex-center search-keyboard-icon">
               <span class="gsok_a gsst_e" id="gs_ok50"><img src="//www.gstatic.com/inputtools/images/tia.png" tia_field_name="search_query" tia_disable_swap="true" tia_property="youtube"></span>
             </div>
@@ -62,18 +63,23 @@
               </svg>
             </div>
           </div>
+          <div class="search-div-mic hover-pointer">
+            <div class="search-div-mic-svg" style="width: 24px; height: 24px; fill: currentcolor;">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <button>
-            camera
-          </button>
-          <button>
-            알림
-          </button>
-          <button>
-            프로필
-          </button>
+        <div class="header-end-div d-flex-space-between d-flex-align-center">
+          <div class="cursor-pointer">
+            <div style="width: 100%; height: 100%; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: block; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg></div>
+          </div>
+          <div class="cursor-pointer">
+            <div style="width: 100%; height: 100%; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg></div>
+          </div>
+          <div class="cursor-pointer">
+            <img class="account-img" id="img" draggable="false" class="style-scope yt-img-shadow" alt="아바타 이미지" height="32" width="32" src="https://yt3.ggpht.com/yti/AGOGRCpopWw0HKE3YJa1QNVXQyQ5-cjlgpdy6qa8YQ=s88-c-k-c0x00ffffff-no-rj">
+          </div>
         </div>
       </div>
 
@@ -460,6 +466,141 @@
     </nav>
 
     <main>
+      <div class="main-category">
+        <div class="main-category-item-div"><span class="main-category-item-span">전체</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">실시간</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">음악</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">뉴스</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">믹스</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">ASMR</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">게임</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">만화 영화</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">자연</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">축구</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">최근에 업로드된 동영상</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">감상한 동영상</span></div>
+        <div class="main-category-item-div"><span class="main-category-item-span">새로운 맞춤 동영상</span></div>
+      </div>
+      <div class="main-container">
+        <div class="main-video-item">
+          <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/JqLIV9QzYt8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLA9lECuFF2pI1AYYuKTyFNA48HnMg">
+          <div>
+            <span>Ｓｍｏｋｅ　Ａｎｄ　Ｃｈｉｌｌ 🚬 Lofi Hip Hop & Chillhop Mix ~ beats to relax / study / chill out 게시자: Mimi Lofi Chill 조회수 1,419,727회 스트리밍 시간: 4개월 전 11시간 54분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/xNw2qPX_jEQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAdfsrRETstdSIxGfVDXYMkp2bB3w">
+          </div>
+          <div>
+            <span>드디어 끝장전에 출격하는 이제동! 폭군을 상대하는 점신 김윤중! 이제동 JD Z vs 김윤중 Shuttle P SC1-229 게시자: 주식회사 중계진 조회수 18,780회 8시간 전 2시간 19분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/CTVmz19G19c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBJTWy1J_c1EXoAuwO5z0CIL0JJjw">
+          </div>
+          <div>
+            <span>마침표 찍으러 온 유시민 &quot;스트레스 받지 마라! 끝이 보인다.“ 게시자: [팟빵] 매불쇼 조회수 1,801,014회 2일 전 1시간 17분 '나중에 볼 동영상' 재생목록의 동영상</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/MCWTnDAzpWE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAUSf7XPlyJTUSSeZeWDMIyCq7UnQ">
+          </div>
+          <div>
+           <span>3시간 공부하게 해주는 타이머｜장작ASMR🔥 【motemote｜모트모트｜공부할 때】 게시자: 모트모트TV 조회수 653,186회 1년 전 3시간</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/S4xUS0xxl2c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAebzgym38dK-cLKHu3BVIiYtxSvQ">
+          </div>
+          <div>
+            <span>'비트코인 창시자' 사토시 진위 여부 소송...코인 가치에 영향 미칠까? ft. 임우종 원스토어 개발자 @sbs_economy 게시자: SBS 뉴스 조회수 22,550회 스트리밍 시간: 17시간 전 1시간 31분 '나중에 볼 동영상' 재생목록의 동영상</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/U7Y50T7NKyw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDt7Waj5IMmXpvk-0rDae7OSOEtlQ">
+          </div>
+          <div>
+            <span>🔥 아늑한 벽난로 4K(12시간). 타닥거리는 불소리가 나는 벽난로. 딱딱거리는 벽난로 4K 게시자: FOBOS PLANET 조회수 951,330회 스트리밍 시간: 2개월 전 11시간 54분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/CU9PZTMKxT0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhAIFkoZTAP&amp;rs=AOn4CLCHcGJQCzqDvK7sh8BagFJCCfn75A">
+          </div>
+          <div>
+            <span>Soothing Winter Jazz With Fireplace ❄️☃️ Relaxing Jazz Background Music in Cozy Room By The Lake 게시자: Night Jazz Vibes 조회수 96,854회</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/7p41rWD3s-c/hq720_live.jpg?sqp=CKjcu64G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCo6wFxc6Mk24eLx7nPMHJ3240zDw">
+          </div>
+          <div>
+            <span>Late Night 🌟 Lofi Hip Hop | Chill Music [ Beats To Relax / Chill / Calm / Stress Relief ] 게시자: Mimi Lofi Chill 조회수 951회 24시간</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/PXnQglF4BG4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBhgO7X6YxzbN1aGEXSZZj3zpSAKg">
+          </div>
+          <div>
+            <span>[영어논문작성] 명사 여러 개로 명사를 꾸미는 것 피하기 게시자: 영어논문작성랩 조회수 29회 2일 전 11분 36초</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/LExWnF5yKGE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCosZq02-NUOi-1v5F9vE54UkaxWg">
+          </div>
+          <div>
+            <span>박빙 대선에는 후보단일화-2002년 후보단일화토론 [토론의민족] 게시자: 생방송심야토론 조회수 263,927회 2년 전 1시간 34분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/_rwMhyk1nKw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAgGQ-J3YVm6Gom11puglB3GQ3q0w">
+          </div>
+          <div>
+            <span>아침부터 정신 바짝 들게 하는 손웅정 명언 어록 모음집 | 쓴소리 게시자: 강철 멘탈_동기부여 조회수 2,090,531회 1년 전 5분 25초</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/Mc6rGzCKL90/hq720_live.jpg?sqp=CKjcu64G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBltfynpCBNm9LxzVN_4170bZ9Ryg">
+          </div>
+          <div>
+            <span>[Relaxing Ghibli Piano] 💛 너무 생각하지 마세요 🌻 4 시간 지브리 메들리 피아노 💖 지브리 음악은 긍정적 인 에너지를 제공합니다 💎 마녀의 택배, 이웃 토토로 게시자: BGM Ghibli Studio 조회수 2,496,603회 10개월 전 3시간 31분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/uGNsDR9aIUM/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBqjt5wDLhoYkwuBFIiOQ90aGVPhg">
+          </div>
+          <div>
+            <span>OpenAI가 또 일냈습니다… 텍스트만 넣으면 1분짜리 영상, 영화가! 기존보다 훨씬 더 뛰어난 모델 SORA 기술적인 이유까지! 게시자: 안될공학 - IT 테크 신기술 조회수 1,705회 41분 전 10분 59초</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/lrmDoJkZjns/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBkTskQqnQTBAyKt49YXe-BIjhbTw">
+          </div>
+          <div>
+            <span>𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 | '세상은 소리로 가득 차있어요' 류이치 사카모토 게시자: 마이오데스 My Odes 조회수 3,313,876회 1년 전 37분</span>
+          </div>
+        </div>
+        <div class="main-video-item">
+          <div>
+            <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/DXT9dF-WK-I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAdePlBeHzhNbZox8uwTEnoCpXLOA">
+          </div>
+          <div>
+            <span>휴식, 공부, 집중을 위한 부드러운 재즈 음악 ☕ 아늑한 커피숍 분위기 & 차분한 재즈 배경 게시자: Gently Peaceful 조회수 76,092회</span>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </body>
